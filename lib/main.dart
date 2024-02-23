@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Shopify Example',
       theme: ThemeData(primaryColor: Colors.redAccent),
       home: const MyHomePage(),
@@ -55,7 +56,7 @@ class MyHomePageState extends State<MyHomePage> {
     const CollectionTab(),
     const SearchTab(),
     const ShopTab(),
-    const BlogTab(),
+    // const BlogTab(),
     const OrdersTab(),
     const AuthTab(),
   ];
@@ -78,8 +79,8 @@ class MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.category), label: 'Collections'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
           BottomNavigationBarItem(icon: Icon(Icons.shopify), label: 'Shop'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.book_online_outlined), label: 'Blog'),
+          // BottomNavigationBarItem(
+          //     icon: Icon(Icons.book_online_outlined), label: 'Blog'),
           BottomNavigationBarItem(icon: Icon(Icons.history), label: 'Orders'),
           BottomNavigationBarItem(icon: Icon(Icons.login), label: 'Login'),
         ],
