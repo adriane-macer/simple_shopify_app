@@ -58,7 +58,7 @@ class MyHomePageState extends State<MyHomePage> {
     const ShopTab(),
     // const BlogTab(),
     const OrdersTab(),
-    const AuthTab(),
+    // const AuthTab(),
   ];
 
   @override
@@ -82,7 +82,7 @@ class MyHomePageState extends State<MyHomePage> {
           // BottomNavigationBarItem(
           //     icon: Icon(Icons.book_online_outlined), label: 'Blog'),
           BottomNavigationBarItem(icon: Icon(Icons.history), label: 'Orders'),
-          BottomNavigationBarItem(icon: Icon(Icons.login), label: 'Login'),
+          // BottomNavigationBarItem(icon: Icon(Icons.login), label: 'Login'),
         ],
       ),
     );
