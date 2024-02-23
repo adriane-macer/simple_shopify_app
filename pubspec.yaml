@@ -38,6 +38,7 @@ dependencies:
   shopify_flutter: ^1.5.8
   flutter_dotenv: ^5.1.0
   flutter_inappwebview:
+  flutter_launcher_icons: ^0.13.1
 
 
 

@@ -71,24 +71,26 @@ class HomeTabState extends State<HomeTab> {
   Widget _buildProductThumbnail(Product product) {
     return InkWell(
       onTap: () => _navigateToProductDetailScreen(product),
-      child: Container(
-        alignment: Alignment.bottomCenter,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        decoration: product.images.isNotEmpty
-            ? BoxDecoration(
-            image: DecorationImage(
-                fit: BoxFit.cover,
-                image: NetworkImage(
-                  product.images.first.originalSrc,
-                )))
-            : const BoxDecoration(),
+      child: Card(
         child: Container(
-          width: MediaQuery.of(context).size.width,
           alignment: Alignment.bottomCenter,
-          child: Text(
-            product.title,
-            style: const TextStyle(fontWeight: FontWeight.bold),
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          decoration: product.images.isNotEmpty
+              ? BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage(
+                    product.images.first.originalSrc,
+                  )))
+              : const BoxDecoration(),
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            alignment: Alignment.bottomCenter,
+            child: Text(
+              product.title,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
         ),
       ),
