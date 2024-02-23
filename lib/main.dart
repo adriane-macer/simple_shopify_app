@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Shopify Example',
-      theme: ThemeData(primaryColor: Colors.redAccent),
+      theme: ThemeData(primaryColor: Colors.orangeAccent),
       home: const MyHomePage(),
     );
   }

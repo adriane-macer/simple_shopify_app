@@ -39,6 +39,7 @@ dependencies:
   flutter_dotenv: ^5.1.0
   flutter_inappwebview:
   flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.10
 
 
 
